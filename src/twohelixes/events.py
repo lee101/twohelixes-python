@@ -1,0 +1,12 @@
+class Events:
+    PAGE_VIEW = "page_view"
+    SIGNUP_VIEW = "signup_view"
+    SIGN_UP_STARTED = "sign_up_started"
+    SIGN_UP_COMPLETED = "sign_up_completed"
+    SIGN_IN_STARTED = "sign_in_started"
+    SIGN_IN_COMPLETED = "sign_in_completed"
+    PAYWALL_OPEN = "paywall_open"
+    PAYWALL_SIGNUP_CLICKED = "paywall_signup_clicked"
+    BEGIN_CHECKOUT = "begin_checkout"
+    PURCHASE = "purchase"
+    REFUND = "refund"

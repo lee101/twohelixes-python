@@ -1,0 +1,32 @@
+[project]
+name = "twohelixes"
+version = "0.1.0"
+description = "Tiny zero-dependency Python client for twoHelixes product analytics: server-side tracking and reporting."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Lee Penkman" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["analytics", "tracking", "funnel", "events", "twohelixes"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://twohelixes.com"
+Repository = "https://github.com/lee101/twohelixes-python"
+
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/twohelixes"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
